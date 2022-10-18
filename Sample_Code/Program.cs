@@ -13,8 +13,8 @@ namespace sample_code
             AliceBlue Alice = new AliceBlue();
 
             #region [Session_ID]
-            string User_ID = "RC047";
-            string API_Key = "vVhS18zsNZkQ8TYiZlbD77Fcllg7L5ZKXiSFxECJIY5ZWjaZaWlQAjSTUy4EWc9GlxbbFAKgfxtl7LWTAXbZkuQKNX8QqcEJtosZG5FHylD2dmmUe9kilpCB5exC0i0R";
+            string User_ID = "";
+            string API_Key = "";
             Boolean log = true; //Log file 
             Console.WriteLine("The session :" + Alice.session_ID(User_ID, API_Key, log));
             #endregion
