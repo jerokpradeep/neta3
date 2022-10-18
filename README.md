@@ -1,4 +1,4 @@
-# neta3-ALICEBLUE (Beta)
+# neta3-ALICEBLUE (BETA)
 
 # Official .Net SDK for Alice Blue API
 
