@@ -1,4 +1,4 @@
-# dneta3-ALICEBLUE
+# neta3-ALICEBLUE
 
 # Official .Net SDK for Alice Blue API
 
@@ -26,7 +26,7 @@ Execute in Tools » NuGet Package Manager » Package Manager Console
 NuGet\Install-Package neta3 -Version 1.1.2
 
 ### Prerequisites
-dneta3 Library Connect the  .NET Core 6.0,net6.0-android,net6.0-ios,net6.0-maccatalyst ,net6.0-macos,net6.0-tvos,net6.0-windows
+neta3 Library Connect the  .NET Core 6.0,net6.0-android,net6.0-ios,net6.0-maccatalyst ,net6.0-macos,net6.0-tvos,net6.0-windows
 
 ### Add Header
 
@@ -147,5 +147,5 @@ Console.WriteLine("The Modify_Order:" + Alice.Modify_Order(transtype,discqty, ex
 ```
 ## Backlog
 
-[Here](https://github.com/jerokpradeep) is an example of what I'm expecting while you are creating an issue.```
+[Here](https://github.com/jerokpradeep) is an example of what I'm expecting while you are creating an issue.
 
