@@ -43,20 +43,20 @@ namespace sample_code
             #endregion
 
             #region [Place_Order]
-            //string complexty = "regular";
-            //string discqty = "0";
-            //string exch = "NSE";
-            //string pcode = "cnc";
-            //string prctyp = "l";
-            //string price = "520.0";
-            //string qty = "1";
-            //string ret = "DAY";
-            //string symbol_id = "3045";
-            //string transtype = "buy";
-            //string trigprice = "";
-            //string ordertag = "order1";            
-            //string trading_symbol = "SBIN-EQ";
-            //Console.WriteLine("the PlaceOrder:" + Alice.Place_Order(complexty, discqty, exch, pcode, prctyp, price, qty, ret, symbol_id, trading_symbol, transtype, trigprice, ordertag));
+            string complexty = "regular";
+            string discqty = "0";
+            string exch = "NSE";
+            string pcode = "cnc";
+            string prctyp = "l";
+            string price = "520.0";
+            string qty = "1";
+            string ret = "DAY";
+            string symbol_id = "3045";
+            string transtype = "buy";
+            string trigprice = "";
+            string ordertag = "order1";            
+            string trading_symbol = "SBIN-EQ";
+            Console.WriteLine("the PlaceOrder:" + Alice.Place_Order(complexty, discqty, exch, pcode, prctyp, price, qty, ret, symbol_id, trading_symbol, transtype, trigprice, ordertag));
             #endregion
 
             #region [Order_Histroy]
@@ -65,26 +65,31 @@ namespace sample_code
             #endregion
 
             #region [Cancle_Order]
-            //string exch = "NSE";
-            //string nestOrderNumber = "221012000081870";
-            //string trading_symbol = "SBIN-EQ";
-            //Console.WriteLine("The Cancle Order:" + Alice.Cancel_Order( exch,nestOrderNumber,trading_symbol));
+            string exch = "NSE";
+            string nestOrderNumber = "221012000081870";
+            string trading_symbol = "SBIN-EQ";
+            Console.WriteLine("The Cancle Order:" + Alice.Cancel_Order( exch,nestOrderNumber,trading_symbol));
             #endregion
 
 
 
             #region[Modify_Order]
-            //string transtype = "buy";
-            //string discqty = "0";
-            //string exch = "nse";
-            //string trading_symbol = "sbin-eq";
-            //string nestOrderNumber = "221012000081870";
-            //string prctyp = "l";
-            //string price = "520.0";
-            //string qty = "1";
-            //string trigprice = "";
-            //string filledquantity = "0";
-            //Console.WriteLine("The Modify_Order:" + Alice.Modify_Order(transtype,discqty, exch, trading_symbol, nestOrderNumber, prctyp, price, qty,trigPrice, filledQuantity));
+            string transtype = "buy";
+            string discqty = "0";
+            string exch = "nse";
+            string trading_symbol = "sbin-eq";
+            string nestOrderNumber = "221012000081870";
+            string prctyp = "l";
+            string price = "520.0";
+            string qty = "1";
+            string trigprice = "";
+            string filledquantity = "0";
+            Console.WriteLine("The Modify_Order:" + Alice.Modify_Order(transtype,discqty, exch, trading_symbol, nestOrderNumber, prctyp, price, qty,trigPrice, filledQuantity));
+            #endregion
+                
+            #region[Websocket]
+            string subscribe_list = "NSE|26000";
+            Console.WriteLine("The websocket connection is:" + Alice.WebSocketConnection_intialize(subscribe_list).ToString());
             #endregion
         }
     }
