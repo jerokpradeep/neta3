@@ -15,7 +15,7 @@ The HTTP calls have been converted to methods and JSON responses are wrapped int
 ## Installation
 #### Use Visual Sudio code
 ```
-NuGet\Install-Package neta3 -Version 1.1.2
+NuGet\Install-Package neta3 -Version 1.1.4
 ```
 
 ### Install Client Library
@@ -23,7 +23,7 @@ NuGet\Install-Package neta3 -Version 1.1.2
 Using NuGet
 Execute in Tools » NuGet Package Manager » Package Manager Console
 
-NuGet\Install-Package neta3 -Version 1.1.2
+NuGet\Install-Package neta3 -Version 1.1.4
 
 ### Prerequisites
 neta3 Library Connect the  .NET Core 6.0,net6.0-android,net6.0-ios,net6.0-maccatalyst ,net6.0-macos,net6.0-tvos,net6.0-windows
@@ -144,6 +144,12 @@ string qty = "1";
 string trigprice = "";
 string filledquantity = "0";
 Console.WriteLine("The Modify_Order:" + Alice.Modify_Order(transtype,discqty, exch, trading_symbol, nestOrderNumber, prctyp, price, qty,trigPrice, filledQuantity));
+```
+### 12.WebSocket
+#### subscription with pipe ‘|’ delimited tokens and exchange
+```base
+  string subscribe_list = "NSE|26000";
+  Console.WriteLine("The websocket connection is:" + Alice.WebSocketConnection_intialize(subscribe_list).ToString());
 ```
 ## Backlog
 
